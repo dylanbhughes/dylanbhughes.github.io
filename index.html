@@ -5,10 +5,12 @@
 
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="description" content="This is the homepage of Barback.">
+  <meta name="description" content="This is the personal site of Dylan Hughes, a software engineer living in Washington, DC.">
   <meta name="author" content="Dylan Hughes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Barback</title>
+  <title>{{ dylanbhughes }}</title>
+
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Favicons  -->
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -41,127 +43,179 @@
 
 
 </head>
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand">
+      <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
+    </li>
+    <!-- <li>
+      <a href="#portfolio" onclick=$ ( "#menu-close").click();>Portfolio</a>
+    </li> -->
+    <li>
+      <a href="#findMe" onclick=$ ( "#menu-close").click();>Find Me</a>
+    </li>
+    <li>
+      <a target="_blank" href="/Dylan_B_Hughes_Resume.pdf">Resume</a>
+    </li>
+  </ul>
+</nav>
 
 <!-- Header -->
 <header id="top" class="header">
-    <div class="text-vertical-center">
-        <h1>Hi There</h1>
-        <h3>Something Awesome Will Be Here Soon.</h3>
-    </div>
+  <div class="text-vertical-center">
+    <h1>Hi There</h1>
+    <h3>My name's Dylan. I build elegant web applications.</h3>
+    <br>
+    <!-- <a href="#portfolio" class="btn btn-dark btn-lg">Take a Look</a> -->
+  </div>
 </header>
 
-<!-- Services -->
-<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<!--<section id="findMe" class="services bg-primary">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h2>Find Me</h2>
-                <hr class="small">
-                <div class="row">
-                    <div class="col-md-2 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <a href="http://www.facebook.com/barbackapp" target="_blank"><i class="fa fa-facebook fa-stack-1x text-primary"></i></a>
-                        </span>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <a target="_blank" href="http://www.linkedin.com/in/dylanbhughes"><i class="fa fa-linkedin fa-stack-1x text-primary"></i></a>
-                        </span>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <a target="_blank" href="http://twitter.com/barbackapp"><i class="fa fa-twitter fa-stack-1x text-primary"></i></a>
-                        </span>
-                        </div>
-                    </div>
-                </div>
-              -->
-                <!-- /.row (nested) -->
-            <!--</div>-->
-            <!-- /.col-lg-10 -->
-        <!--</div>-->
-        <!-- /.row -->
-    <!--</div>-->
-    <!-- /.container -->
-<!--</section>-->
 
-<!-- Call to Action -->
-<!-- <aside class="call-to-action bg-primary">
-    <div class="container">
+<!-- Portfolio -->
+<!-- <section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2>My Work</h2>
+        <hr class="small">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3>The buttons below are impossible to resist.</h3>
-                <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="https://github.com/dylanbhughes/CityDashboard" target="_blank">
+                      <img class="img-portfolio img-responsive" src="img/CityDashboard.png">
+                  </a>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="https://github.com/dylanbhughes/OnTheWay" target="_blank">
+                      <img class="img-portfolio img-responsive" src="img/OnTheWay.png">
+                  </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="https://www.pfasolutions.com/gp/performance-management" target="_blank">
+                      <img class="img-portfolio img-responsive" src="img/firmview.png">
+                  </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="https://www.blinq.com/" target="_blank">
+                      <img class="img-portfolio img-responsive" src="img/MarkdownBlog.png">
+                  </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</aside> -->
+  </div>
+</section> -->
+
+<!-- Services -->
+<section id="findMe" class="services bg-primary">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <h2>Find Me</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 col-sm-12">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <a target="_blank" href="http://www.linkedin.com/in/dylanbhughes"><i class="fa fa-linkedin fa-stack-1x text-primary"></i></a>
+                            </span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <a target="_blank" href="http://twitter.com/dylanbhughes"><i class="fa fa-twitter fa-stack-1x text-primary"></i></a>
+                            </span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <a target="_blank" href="http://www.github.com/dylanbhughes"><i class="fa fa-github fa-stack-1x text-primary"></i></a>
+                        </span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <a target="_blank" href="/Dylan_B_Hughes_Resume.pdf"><i class="fa fa-file-text fa-stack-1x text-primary"></i></a>
+                        </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>Contact</strong>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong>Contact</strong>
                 </h4>
-                <ul class="list-unstyled">
-                    <!-- <li><i class="fa fa-phone fa-fw"></i> (201) 400-1170</li> -->
-                    <li><i class="fa fa-envelope-o fa-fw"></i>  <a target="_blank" href="mailto:info@barback.com">info@barback.com</a>
-                    </li>
-                </ul>
-                <hr class="small">
-                <p class="text-muted">Copyright &copy; Barback, LLC</p>
-            </div>
-        </div>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone fa-fw"></i> (201) 400-1170</li>
+          <li><i class="fa fa-envelope-o fa-fw"></i> <a target="_blank" href="mailto:dylanbhughes@gmail.com">dylanbhughes@gmail.com</a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; Dylan Hughes</p>
+      </div>
     </div>
+  </div>
 </footer>
 
 <!-- jQuery -->
-<script   src="js/jquery.js" ></script>
+<script src="js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script>
-// Closes the sidebar menu
-$("#menu-close").click(function(e) {
+  // Closes the sidebar menu
+  $("#menu-close").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
-});
+  });
 
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
-});
+  });
 
-// Scrolls to the selected menu item on the page
-$(function() {
+  // Scrolls to the selected menu item on the page
+  $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
         }
+      }
     });
-});
+  });
 </script>
 
 </body>

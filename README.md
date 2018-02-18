@@ -1,2 +1,1 @@
-# dylanbhughes.github.io
-barback.co
+# My personal site
